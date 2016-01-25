@@ -10,7 +10,7 @@ end
 
 def format_phone_number(phone_number_str)
 	#assign the method from above
-	phone_number = select_only_integers
+	phone_number = select_only_integers(phone_number_str)
 	#input the integers in the correct location
   a = "(" + phone_number(0..2) + ")" + " " + phone_number(3..5) + "-" + phone_number(6..9)
   return a
